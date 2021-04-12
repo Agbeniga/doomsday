@@ -25,10 +25,10 @@ nav {
   width: 100%;
 }
 
-li {
-  list-style-type: none;
-  display: inline;
-  padding: 0 10px;
+li{
+    list-style-type: none;
+    display: inline;
+    padding: 0 10px;
 }
 
 a {
@@ -36,9 +36,11 @@ a {
   color: #132c33;
 }
 
-a:hover {
-  border-bottom: 1px solid #c0c0c0;
-  border-bottom-width: 2px;
+a:hover{
+    border-bottom: 1px solid #C0C0C0;
+    border-bottom-width: 2px;
+    text-decoration: none;
+    color: #132C33;
 }
 
 .login-Btn {
@@ -296,4 +298,185 @@ footer {
   .welcome-hero h1 {
     font-size: 2em;
   }
+}
+
+
+@media only screen and (max-width: 800px) {
+    header{
+        background-image: url("../assets/backimage.png") !important;
+        background-repeat: no-repeat;
+        background-size: 51%;
+    }
+    nav{
+        padding: 15px;
+    }
+
+    li{
+        padding: 0 5px;
+    }
+    
+    a{
+        font-size: 10px;
+    }
+
+    .logo img{
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        height: 100px;
+    }
+
+    #welcome{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 25px;
+        
+    }
+    
+    .welcome-hero{
+        width: 50vw;
+        margin-right: 0px;
+        margin-left: 10px;
+        height: 20em;
+    }
+
+    .welcome-hero h1{
+        font-size: 35px;
+    }
+
+    .welcome-hero p{
+        font-size: 13px;
+        margin-top: 30px;
+    }
+    
+    .welcome-hero button{
+        border: none;
+        border-radius: 30px;
+        padding: 7px 35px;
+        background-color: #132C33;
+        margin-top: 10px;
+        color: white;
+    }
+    
+     .hero-img img{
+        padding: 0;
+        height: 200px;
+        width: 350px;
+    }
+
+
+    /* Main page */
+    #main-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+        margin: 0;
+    }
+
+    .main-image img{
+        height: 500px;
+        width: 300px;
+        margin-right: 15px;
+    }
+
+    /* Register Section */
+    #register{
+        border-left: 2px solid #DAD8E7;
+        padding: 25px;
+        flex-grow: 1;
+    }
+
+    #register h2{
+        font-size: 25px;
+        padding: 10px 0;
+        line-height: 10px;
+    }
+
+    #register p{
+        font-size: 10px;
+        color: #132C33;
+        padding-bottom: 5px;
+    }
+    #register input{
+        padding: 4px 0em 4px 0.5em;
+        margin: 0;
+        font-size: 10px;
+        border-radius: 30px;
+        border: 1px solid #132C33;
+    }
+
+    #register input:focus{
+        outline: none;
+        border-radius: 30px;
+        border: 1px solid #70C6C5;
+    }
+
+    #register .name{
+        padding-bottom: 10px;
+    }
+
+    #register .name label{
+        margin-right: 6.2em;
+        font-size: 12px;
+        padding: 0 ;
+    }
+
+    #register .email{
+        padding-bottom: 10px;
+    }
+
+    #register .email label{
+        margin-right: 30px;
+        font-size: 12px;
+        padding: 10 30px 10px 0 ;
+    }
+
+    #register .email input, #register .phone-number input{
+        padding: 3px 4em 3px 1.5em ;
+        font-size: 12px;
+    }
+
+    #register .phone-number{
+        padding-bottom: 10px;
+    }
+
+    #register .phone-number label{
+        margin-right: 28px;
+        font-size: 12px;
+        padding: 10 30px 10px 0 ;
+    }
+
+    #register .password{
+        padding-bottom: 10px;
+    }
+
+    #register .password label{
+        margin-right: 55px;
+        font-size: 12px;
+        padding: 10 30px 10px 0 ;
+    }
+
+    #register .confirm-password{
+        padding-bottom: 10px;
+    }
+
+    #register .confirm-password label{
+        margin-right: 10px;
+        font-size: 12px;
+        padding: 10 30px 10px 0 ;
+    }
+
+
+    .register-btn {
+        text-align: right;
+    }
+
+    .register-btn button{
+        padding: 5px 30px;
+    }
+    .register-btn label{
+        font-size: 12px;
+    }
 }
